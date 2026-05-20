@@ -28,47 +28,46 @@
 
 ---
 
-**Documentation**: <a href="https://mimesis.name/" target="_blank">https://mimesis.name/</a>
+**Документация**: <a href="https://mimesis.name/" target="_blank">https://mimesis.name/</a>
 
 ---
 
-Mimesis ([/mɪˈmiːsɪs](https://mimesis.name/master/about.html#what-does-name-mean)) is a robust data generator for
-Python that can produce a wide range of fake data in various languages.
+Mimesis ([/mɪˈmiːsɪs](https://mimesis.name/master/about.html#what-does-name-mean)) - это надежный генератор данных для Python, который может создавать широкий спектр поддельных данных на разных языках.
 
-The key features are:
+Ключевыми особенностями являются:
 
-- **Multilingual**: Supports 46 different locales.
-- **Extensibility**: Supports custom data providers and custom field handlers.
-- **Ease of use**: Features a simple design and clear documentation for straightforward data generation.
-- **Performance**: Widely recognized as the fastest data generator among Python solutions.
-- **Data variety**: Includes various data providers designed for different use cases.
-- **Schema-based generators**: Offers schema-based data generators to effortlessly produce data of any complexity.
-- **Relational data**: Supports generating relational data with references between schemas for complex data structures.
-- **Intuitive**: Great editor support. Fully typed, thus autocompletion almost everywhere.
+- **Многоязычность**: поддержка 46 различных языков.
+- **Расширяемость**: Поддерживает пользовательские поставщики данных и обработчики пользовательских полей.
+- **Простота использования**: Имеет простой дизайн и понятную документацию для простого создания данных.
+- **Производительность**: Широко признан как самый быстрый генератор данных среди решений на Python.
+- **Разнообразие данных**: Включает различные поставщики данных, предназначенные для различных случаев использования.
+- **Генераторы на основе схем**: Предлагает генераторы данных на основе схем для легкого создания данных любой сложности.
+- **Реляционные данные**: Поддерживает создание реляционных данных со ссылками между схемами для сложных структур данных.
+- **Интуитивно понятный интерфейс**: Отличная поддержка редакторов. Полностью типизированный, что обеспечивает автоматическое заполнение практически везде.
 
-## Installation
+## Установка
 
-> [!WARNING]
-> In Mimesis 20.0.0, I’m going to completely rework the current schema-based generation implementation. There will be no backward compatibility with the existing implementation.
+> [ПРЕДУПРЕЖДЕНИЕ!]
+> В Mimesis 20.0.0 я собираюсь полностью переработать текущую реализацию генерации на основе схемы. Обратной совместимости с существующей реализацией не будет.
 
-> [!IMPORTANT]
-> To work with Mimesis on Python versions 3.8 and 3.9, the final compatible version is Mimesis 11.1.0. Install this specific version to ensure compatibility.
+> [ВАЖНО!]
+> Для работы с Mimesis на Python версий 3.8 и 3.9 последней совместимой версией является Mimesis 11.1.0. Установите именно эту версию, чтобы обеспечить совместимость.
 
-> [!WARNING]
-> Starting from version 19.0.0, Mimesis has dropped support for builtin providers.
+> [ПРЕДУПРЕЖДЕНИЕ!]
+> Начиная с версии 19.0.0, Mimesis прекратил поддержку встроенных поставщиков.
 
 
-To install mimesis, use pip:
+Чтобы установить mimesis, используйте pip:
 
 ```
 ~ pip install mimesis
 ```
 
-## Documentation
+## Документация
 
-You can find the complete documentation on the [Read the Docs](https://mimesis.name/).
+Вы можете найти полную документацию на сайте [Read the Docs](https://mimesis.name/).
 
-It is divided into several sections:
+Он разделен на несколько разделов:
 
 -  [About Mimesis](https://mimesis.name/latest/about.html)
 -  [Quickstart](https://mimesis.name/latest/quickstart.html)
@@ -80,15 +79,15 @@ It is divided into several sections:
 -  [API Reference](https://mimesis.name/latest/api.html)
 -  [Changelog](https://mimesis.name/latest/index.html#changelog)
 
-You can improve it by sending pull requests to this repository.
+Вы можете улучшить его, отправив pull-запросы в этот репозиторий.
 
-## Usage
+## Использование
 
-The library is exceptionally user-friendly, and it only requires you to import a **Data Provider** object that
-corresponds to the desired data type.
+Библиотека исключительно удобна в использовании, и от вас требуется только импортировать объект **Поставщик данных**,
+соответствующий желаемому типу данных.
 
-For instance, the [Person](https://mimesis.name/latest/api.html#person) provider can be imported to access personal information,
-including name, surname, email, and other related fields:
+Например, поставщик услуг [Person](https://mimesis.name/latest/api.html#person) может быть импортирован для доступа к личной информации,
+включая имя, фамилию, адрес электронной почты и другие связанные поля:
 
 ```python
 from mimesis import Person
@@ -109,6 +108,6 @@ person.telephone(mask='1-4##-8##-5##3')
 # Output: '1-436-896-5213'
 ```
 
-## License
+## Лицензия
 
-Mimesis is licensed under the MIT License. See [LICENSE](https://github.com/lk-geimfari/mimesis/blob/master/LICENSE) for more information.
+Mimesis распространяется по лицензии MIT. Дополнительную информацию смотрите в разделе [LICENSE](https://github.com/lk-geimfari/mimesis/blob/master/LICENSE).
